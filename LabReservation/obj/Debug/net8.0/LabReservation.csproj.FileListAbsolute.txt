@@ -1,0 +1,5 @@
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.AssemblyInfoInputs.cache
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.AssemblyInfo.cs
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.csproj.CoreCompileInputs.cache
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.sourcelink.json

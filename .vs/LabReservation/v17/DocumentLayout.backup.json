@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Konstruksi\\tugas besar\\LabReservation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|d:\\konstruksi\\tugas besar\\labreservation\\labreservation\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|solutionrelative:labreservation\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|d:\\konstruksi\\tugas besar\\labreservation\\labreservation\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|solutionrelative:labreservation\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|d:\\konstruksi\\tugas besar\\labreservation\\labreservation\\utils\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|solutionrelative:labreservation\\utils\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|d:\\konstruksi\\tugas besar\\labreservation\\labreservation\\services\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|solutionrelative:labreservation\\services\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|d:\\konstruksi\\tugas besar\\labreservation\\labreservation\\domain\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|solutionrelative:labreservation\\domain\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|d:\\konstruksi\\tugas besar\\labreservation\\labreservation\\data\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|solutionrelative:labreservation\\data\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|d:\\konstruksi\\tugas besar\\labreservation\\labreservation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5DE7EB4-3C2A-4247-A648-4FCFF1F023D1}|LabReservation\\LabReservation.csproj|solutionrelative:labreservation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +43,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "LabReservation\\Services\\UserService.cs",
+              "ToolTip": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Services\\UserService.cs",
+              "RelativeToolTip": "LabReservation\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:57:49.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Domain\\User.cs",
+              "RelativeDocumentMoniker": "LabReservation\\Domain\\User.cs",
+              "ToolTip": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Domain\\User.cs",
+              "RelativeToolTip": "LabReservation\\Domain\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:57:15.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "test.cs",
+              "DocumentMoniker": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Utils\\test.cs",
+              "RelativeDocumentMoniker": "LabReservation\\Utils\\test.cs",
+              "ToolTip": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Utils\\test.cs",
+              "RelativeToolTip": "LabReservation\\Utils\\test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:54:06.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "test.cs",
+              "DocumentMoniker": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Services\\test.cs",
+              "RelativeDocumentMoniker": "LabReservation\\Services\\test.cs",
+              "ToolTip": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Services\\test.cs",
+              "RelativeToolTip": "LabReservation\\Services\\test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:54:01.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "test.cs",
+              "DocumentMoniker": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Domain\\test.cs",
+              "RelativeDocumentMoniker": "LabReservation\\Domain\\test.cs",
+              "ToolTip": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Domain\\test.cs",
+              "RelativeToolTip": "LabReservation\\Domain\\test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:53:56.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "test.cs",
+              "DocumentMoniker": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Data\\test.cs",
+              "RelativeDocumentMoniker": "LabReservation\\Data\\test.cs",
+              "ToolTip": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Data\\test.cs",
+              "RelativeToolTip": "LabReservation\\Data\\test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:53:49.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Konstruksi\\tugas besar\\LabReservation\\LabReservation\\Program.cs",
               "RelativeDocumentMoniker": "LabReservation\\Program.cs",

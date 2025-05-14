@@ -3,3 +3,13 @@ D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabRese
 D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.AssemblyInfo.cs
 D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.csproj.CoreCompileInputs.cache
 D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.sourcelink.json
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\bin\Debug\net8.0\LabReservation.exe
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\bin\Debug\net8.0\LabReservation.deps.json
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\bin\Debug\net8.0\LabReservation.runtimeconfig.json
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\bin\Debug\net8.0\LabReservation.dll
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\bin\Debug\net8.0\LabReservation.pdb
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.dll
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\refint\LabReservation.dll
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.pdb
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.genruntimeconfig.cache
+D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\ref\LabReservation.dll

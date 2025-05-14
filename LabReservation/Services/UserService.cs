@@ -14,8 +14,11 @@ namespace LabReservation.Services
         public List<User> LoadAll() =>
             File.Exists(FilePath) ? JsonSerializer.Deserialize<List<User>>(File.ReadAllText(FilePath))! : new();
 
-        public void SaveAll(List<User> data) =>
+        public void SaveAll(List<User> data)
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(FilePath)!);
             File.WriteAllText(FilePath, JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true }));
+        }
 
         public void Register(string username, string password, string role)
         {

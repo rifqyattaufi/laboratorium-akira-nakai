@@ -1,8 +1,4 @@
-﻿using System;
-using LabReservationSystem.Services;
-using LabReservationSystem.Domain;
-using LabReservationSystem.Utils;
-using LabReservation.Domain;
+﻿using LabReservation.Domain;
 using LabReservation.Services;
 using LabReservation.Utils;
 
@@ -51,9 +47,11 @@ class Program
 
                 if (currentUser.Role == "admin")
                 {
-                    Console.WriteLine("4. Tambah Laboratorium");
-                    Console.WriteLine("5. Edit Laboratorium");
-                    Console.WriteLine("6. Hapus Laboratorium");
+                    Console.WriteLine("4. Lihat Semua Reservasi");
+                    Console.WriteLine("5. Ubah Status Reservasi");
+                    Console.WriteLine("6. Tambah Laboratorium");
+                    Console.WriteLine("7. Edit Laboratorium");
+                    Console.WriteLine("8. Hapus Laboratorium");
                 }
 
                 Console.WriteLine("9. Logout");
@@ -76,12 +74,18 @@ class Program
                             LihatReservasi(reservationService);
                             break;
                         case "4":
-                            if (currentUser.Role == "admin") TambahLab(labService);
+                            if (currentUser.Role == "admin") LihatSemuaReservasi(reservationService);
                             break;
                         case "5":
-                            if (currentUser.Role == "admin") EditLab(labService);
+                            if (currentUser.Role == "admin") UbahStatusReservasi(reservationService);
                             break;
                         case "6":
+                            if (currentUser.Role == "admin") TambahLab(labService);
+                            break;
+                        case "7":
+                            if (currentUser.Role == "admin") EditLab(labService);
+                            break;
+                        case "8":
                             if (currentUser.Role == "admin") HapusLab(labService);
                             break;
                         case "9":
@@ -216,4 +220,34 @@ class Program
             Console.WriteLine($"#{r.Id} | Lab: {r.LabId} | {r.StartTime:dd MMM HH:mm} - {r.EndTime:HH:mm} | Status: {r.Status}");
         }
     }
+
+    static void LihatSemuaReservasi(ReservationService reservationService)
+    {
+        var data = reservationService.LoadAll();
+        Console.WriteLine("\n--- Semua Reservasi ---");
+        foreach (var r in data)
+        {
+            Console.WriteLine($"#{r.Id} | UserID: {r.UserId} | LabID: {r.LabId} | {r.StartTime:dd MMM HH:mm} - {r.EndTime:HH:mm} | Status: {r.Status}");
+        }
+    }
+
+    static void UbahStatusReservasi(ReservationService reservationService)
+    {
+        LihatSemuaReservasi(reservationService);
+        Console.Write("ID Reservasi yang ingin diubah: ");
+        int id = int.Parse(Console.ReadLine()!);
+
+        Console.Write("Status baru (approved/rejected): ");
+        var status = Console.ReadLine()?.ToLower();
+
+        if (status != "approved" && status != "rejected")
+        {
+            Console.WriteLine("Status tidak valid.");
+            return;
+        }
+
+        reservationService.UpdateStatus(id, status);
+        Console.WriteLine("Status berhasil diubah.");
+    }
+
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabReservation.Data
 {
-    class test
+    class Test
     {
     }
 }

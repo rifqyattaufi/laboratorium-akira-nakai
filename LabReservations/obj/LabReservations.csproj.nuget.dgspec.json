@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Konstruksi\\tugas besar\\LabReservations\\LabReservations\\LabReservations.csproj": {}
+    "D:\\Konstruksi\\tugas besar\\laboratorium-akira-nakai\\LabReservations\\LabReservations.csproj": {}
   },
   "projects": {
-    "D:\\Konstruksi\\tugas besar\\LabReservations\\LabReservations\\LabReservations.csproj": {
+    "D:\\Konstruksi\\tugas besar\\laboratorium-akira-nakai\\LabReservations\\LabReservations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Konstruksi\\tugas besar\\LabReservations\\LabReservations\\LabReservations.csproj",
+        "projectUniqueName": "D:\\Konstruksi\\tugas besar\\laboratorium-akira-nakai\\LabReservations\\LabReservations.csproj",
         "projectName": "LabReservations",
-        "projectPath": "D:\\Konstruksi\\tugas besar\\LabReservations\\LabReservations\\LabReservations.csproj",
+        "projectPath": "D:\\Konstruksi\\tugas besar\\laboratorium-akira-nakai\\LabReservations\\LabReservations.csproj",
         "packagesPath": "C:\\Users\\Rifqy Attaufi\\.nuget\\packages\\",
-        "outputPath": "D:\\Konstruksi\\tugas besar\\LabReservations\\LabReservations\\obj\\",
+        "outputPath": "D:\\Konstruksi\\tugas besar\\laboratorium-akira-nakai\\LabReservations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

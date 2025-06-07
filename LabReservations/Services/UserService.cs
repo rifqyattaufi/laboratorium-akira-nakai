@@ -20,11 +20,11 @@ namespace LabReservation.Services
             File.WriteAllText(FilePath, JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true }));
         }
 
-        public void Register(string username, string password, string role)
+        public bool Register(string username, string password, string role)
         {
             var data = LoadAll();
             if (data.Any(u => u.Username == username))
-                throw new Exception("Username sudah terdaftar.");
+                return false;
             data.Add(new User
             {
                 Id = data.Count > 0 ? data.Max(u => u.Id) + 1 : 1,
@@ -33,12 +33,14 @@ namespace LabReservation.Services
                 Role = role
             });
             SaveAll(data);
+
+            return true;
         }
 
-        public User Login(string username, string password)
+        public User? Login(string username, string password)
         {
             var user = LoadAll().FirstOrDefault(u => u.Username == username && u.Password == password);
-            if (user == null) throw new Exception("Login gagal.");
+            if (user == null) return null;
             return user;
         }
     }

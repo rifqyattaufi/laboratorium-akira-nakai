@@ -13,3 +13,18 @@ D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\refint\
 D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.pdb
 D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\LabReservation.genruntimeconfig.cache
 D:\Konstruksi\tugas besar\LabReservation\LabReservation\obj\Debug\net8.0\ref\LabReservation.dll
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\bin\Debug\net8.0\LabReservation.exe
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\bin\Debug\net8.0\LabReservation.deps.json
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\bin\Debug\net8.0\LabReservation.runtimeconfig.json
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\bin\Debug\net8.0\LabReservation.dll
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\bin\Debug\net8.0\LabReservation.pdb
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\LabReservation.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\LabReservation.AssemblyInfoInputs.cache
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\LabReservation.AssemblyInfo.cs
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\LabReservation.csproj.CoreCompileInputs.cache
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\LabReservation.sourcelink.json
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\LabReservation.dll
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\refint\LabReservation.dll
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\LabReservation.pdb
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\LabReservation.genruntimeconfig.cache
+c:\Users\apexmoxxy\Documents\Projects\.NET\laboratorium-akira-nakai\LabReservation\obj\Debug\net8.0\ref\LabReservation.dll

@@ -10,5 +10,11 @@
     "Username": "rifqy",
     "Password": "rifqy123",
     "Role": "mahasiswa"
+  },
+  {
+    "Id": 3,
+    "Username": "admin",
+    "Password": "admin123",
+    "Role": "admin"
   }
 ]

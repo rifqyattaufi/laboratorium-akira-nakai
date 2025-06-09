@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hFXw52uu97U=",
+  "dgSpecHash": "tHypO3X7JmU=",
   "success": true,
-  "projectFilePath": "D:\\Konstruksi\\tugas besar\\laboratorium-akira-nakai\\LabReservations\\LabReservations.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Rifqy Attaufi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.16\\microsoft.windowsdesktop.app.ref.8.0.16.nupkg.sha512",
-    "C:\\Users\\Rifqy Attaufi\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.16\\microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
-    "C:\\Users\\Rifqy Attaufi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.16\\microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512",
-    "C:\\Users\\Rifqy Attaufi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.16\\microsoft.netcore.app.host.win-x64.8.0.16.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Victus\\Documents\\KPL\\laboratorium-akira-nakai\\LabReservations\\LabReservations.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

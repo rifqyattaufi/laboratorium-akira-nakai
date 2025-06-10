@@ -1,5 +1,6 @@
 ﻿using LabReservation.Domain;
 using LabReservation.Services;
+using LabReservations.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,6 +43,7 @@ namespace LabReservations.Forms
 
             if (userData != null)
             {
+                UserSession.Instance.User = userData;
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 // Lanjutkan ke form utama atau proses berikutnya
                 this.DialogResult = DialogResult.OK;

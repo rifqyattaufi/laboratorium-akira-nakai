@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgvLabs = new DataGridView();
-            gbForm = new GroupBox();
-            btnSimpan = new Button();
-            btnHapus = new Button();
-            btnBatal = new Button();
-            btnTambah = new Button();
-            txtDesc = new TextBox();
-            label2 = new Label();
-            txtName = new TextBox();
-            label1 = new Label();
+            dgvLabs = new System.Windows.Forms.DataGridView();
+            gbForm = new System.Windows.Forms.GroupBox();
+            btnSimpan = new System.Windows.Forms.Button();
+            btnHapus = new System.Windows.Forms.Button();
+            btnBatal = new System.Windows.Forms.Button();
+            btnTambah = new System.Windows.Forms.Button();
+            txtDesc = new System.Windows.Forms.TextBox();
+            label2 = new System.Windows.Forms.Label();
+            txtName = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)dgvLabs).BeginInit();
             gbForm.SuspendLayout();
             SuspendLayout();
@@ -46,17 +46,18 @@
             // 
             dgvLabs.AllowUserToAddRows = false;
             dgvLabs.AllowUserToDeleteRows = false;
-            dgvLabs.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dgvLabs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLabs.Location = new Point(441, 15);
-            dgvLabs.Margin = new Padding(2);
+            dgvLabs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dgvLabs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLabs.Location = new System.Drawing.Point(441, 15);
+            dgvLabs.Margin = new System.Windows.Forms.Padding(2);
             dgvLabs.MultiSelect = false;
             dgvLabs.Name = "dgvLabs";
             dgvLabs.ReadOnly = true;
             dgvLabs.RowHeadersWidth = 72;
-            dgvLabs.Size = new Size(810, 647);
+            dgvLabs.Size = new System.Drawing.Size(810, 647);
             dgvLabs.TabIndex = 0;
             dgvLabs.CellClick += dgvLabs_CellClick;
+            dgvLabs.Dock = System.Windows.Forms.DockStyle.Fill;
             // 
             // gbForm
             // 
@@ -68,104 +69,111 @@
             gbForm.Controls.Add(label2);
             gbForm.Controls.Add(txtName);
             gbForm.Controls.Add(label1);
-            gbForm.Location = new Point(8, 8);
-            gbForm.Margin = new Padding(2);
+            gbForm.Location = new System.Drawing.Point(8, 8);
+            gbForm.Margin = new System.Windows.Forms.Padding(2);
             gbForm.Name = "gbForm";
-            gbForm.Padding = new Padding(2);
-            gbForm.Size = new Size(429, 469);
+            gbForm.Padding = new System.Windows.Forms.Padding(2);
+            gbForm.Size = new System.Drawing.Size(429, 647);
             gbForm.TabIndex = 1;
             gbForm.TabStop = false;
             gbForm.Text = "Form Laboratorium";
+            gbForm.Dock = System.Windows.Forms.DockStyle.Left;
             // 
             // btnSimpan
             // 
-            btnSimpan.Location = new Point(226, 383);
-            btnSimpan.Margin = new Padding(2);
+            btnSimpan.Location = new System.Drawing.Point(226, 383);
+            btnSimpan.Margin = new System.Windows.Forms.Padding(2);
             btnSimpan.Name = "btnSimpan";
-            btnSimpan.Size = new Size(201, 87);
+            btnSimpan.Size = new System.Drawing.Size(201, 87);
             btnSimpan.TabIndex = 7;
             btnSimpan.Text = "Simpan";
             btnSimpan.UseVisualStyleBackColor = true;
             btnSimpan.Click += btnSimpan_Click;
+            btnSimpan.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             // 
             // btnHapus
             // 
-            btnHapus.Location = new Point(4, 382);
-            btnHapus.Margin = new Padding(2);
+            btnHapus.Location = new System.Drawing.Point(4, 382);
+            btnHapus.Margin = new System.Windows.Forms.Padding(2);
             btnHapus.Name = "btnHapus";
-            btnHapus.Size = new Size(221, 87);
+            btnHapus.Size = new System.Drawing.Size(221, 87);
             btnHapus.TabIndex = 6;
             btnHapus.Text = "Hapus";
             btnHapus.UseVisualStyleBackColor = true;
             btnHapus.Click += btnHapus_Click;
+            btnHapus.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             // 
             // btnBatal
             // 
-            btnBatal.Location = new Point(226, 292);
-            btnBatal.Margin = new Padding(2);
+            btnBatal.Location = new System.Drawing.Point(226, 292);
+            btnBatal.Margin = new System.Windows.Forms.Padding(2);
             btnBatal.Name = "btnBatal";
-            btnBatal.Size = new Size(203, 87);
+            btnBatal.Size = new System.Drawing.Size(203, 87);
             btnBatal.TabIndex = 5;
             btnBatal.Text = "Batal";
             btnBatal.UseVisualStyleBackColor = true;
             btnBatal.Click += btnBatal_Click;
+            btnBatal.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             // 
             // btnTambah
             // 
-            btnTambah.Location = new Point(0, 292);
-            btnTambah.Margin = new Padding(2);
+            btnTambah.Location = new System.Drawing.Point(0, 292);
+            btnTambah.Margin = new System.Windows.Forms.Padding(2);
             btnTambah.Name = "btnTambah";
-            btnTambah.Size = new Size(225, 87);
+            btnTambah.Size = new System.Drawing.Size(225, 87);
             btnTambah.TabIndex = 4;
             btnTambah.Text = "Tambah";
             btnTambah.UseVisualStyleBackColor = true;
             btnTambah.Click += btnTambah_Click;
+            btnTambah.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             // 
             // txtDesc
             // 
-            txtDesc.Location = new Point(0, 185);
-            txtDesc.Margin = new Padding(2);
+            txtDesc.Location = new System.Drawing.Point(0, 185);
+            txtDesc.Margin = new System.Windows.Forms.Padding(2);
             txtDesc.Multiline = true;
             txtDesc.Name = "txtDesc";
-            txtDesc.Size = new Size(235, 87);
+            txtDesc.Size = new System.Drawing.Size(235, 87);
             txtDesc.TabIndex = 3;
+            txtDesc.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(4, 149);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new System.Drawing.Point(4, 149);
+            label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(69, 20);
+            label2.Size = new System.Drawing.Size(69, 20);
             label2.TabIndex = 2;
             label2.Text = "Deskripsi";
             // 
             // txtName
             // 
-            txtName.Location = new Point(0, 73);
-            txtName.Margin = new Padding(2);
+            txtName.Location = new System.Drawing.Point(0, 73);
+            txtName.Margin = new System.Windows.Forms.Padding(2);
             txtName.Name = "txtName";
-            txtName.Size = new Size(235, 27);
+            txtName.Size = new System.Drawing.Size(235, 27);
             txtName.TabIndex = 1;
+            txtName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(4, 38);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new System.Drawing.Point(4, 38);
+            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(49, 20);
+            label1.Size = new System.Drawing.Size(49, 20);
             label1.TabIndex = 0;
             label1.Text = "Nama";
             // 
             // LabForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1262, 673);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1262, 673);
             Controls.Add(dgvLabs);
             Controls.Add(gbForm);
-            Margin = new Padding(2);
+            Margin = new System.Windows.Forms.Padding(2);
             Name = "LabForm";
             Text = "LabForm";
             Load += LabForm_Load;
@@ -177,15 +185,15 @@
 
         #endregion
 
-        private DataGridView dgvLabs;
-        private GroupBox gbForm;
-        private Button btnSimpan;
-        private Button btnHapus;
-        private Button btnBatal;
-        private Button btnTambah;
-        private TextBox txtDesc;
-        private Label label2;
-        private TextBox txtName;
-        private Label label1;
+        private System.Windows.Forms.DataGridView dgvLabs;
+        private System.Windows.Forms.GroupBox gbForm;
+        private System.Windows.Forms.Button btnSimpan;
+        private System.Windows.Forms.Button btnHapus;
+        private System.Windows.Forms.Button btnBatal;
+        private System.Windows.Forms.Button btnTambah;
+        private System.Windows.Forms.TextBox txtDesc;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label label1;
     }
 }

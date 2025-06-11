@@ -70,3 +70,10 @@ C:\Users\Victus\Documents\KPL\laboratorium-akira-nakai\LabReservations\obj\Debug
 D:\Konstruksi\tugas besar\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.DashboardAdmin.resources
 D:\Konstruksi\tugas besar\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.DashboardUser.resources
 D:\Konstruksi\tugas besar\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.LabForm.resources
+C:\Users\Victus\Documents\KPL\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.exe
+C:\Users\Victus\Documents\KPL\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.deps.json
+C:\Users\Victus\Documents\KPL\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.runtimeconfig.json
+C:\Users\Victus\Documents\KPL\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.dll
+C:\Users\Victus\Documents\KPL\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.pdb
+C:\Users\Victus\Documents\KPL\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.genruntimeconfig.cache
+C:\Users\Victus\Documents\KPL\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\ref\LabReservations.dll

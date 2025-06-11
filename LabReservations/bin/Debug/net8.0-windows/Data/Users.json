@@ -9,6 +9,18 @@
     "Id": 2,
     "Username": "adminn",
     "Password": "admin",
+    "Role": "admin"
+  },
+  {
+    "Id": 3,
+    "Username": "admin",
+    "Password": "admin",
+    "Role": "admin"
+  },
+  {
+    "Id": 4,
+    "Username": "rifqy",
+    "Password": "user",
     "Role": "user"
   }
 ]

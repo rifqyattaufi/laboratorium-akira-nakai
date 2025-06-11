@@ -17,6 +17,9 @@ namespace LabReservations.Forms
         public RegisterForm()
         {
             InitializeComponent();
+            this.AcceptButton = registerButton;
+            this.password.UseSystemPasswordChar = true;
+            this.confirmPassword.UseSystemPasswordChar = true;
         }
 
         private void username_TextChanged(object sender, EventArgs e)
@@ -28,6 +31,19 @@ namespace LabReservations.Forms
         {
             string uname = username.Text.Trim();
             string pass = password.Text;
+            string confirmPass = confirmPassword.Text;
+
+            if (string.IsNullOrWhiteSpace(uname) || string.IsNullOrWhiteSpace(pass) || string.IsNullOrWhiteSpace(confirmPass))
+            {
+                MessageBox.Show("Please fill in all fields.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (pass != confirmPass)
+            {
+                MessageBox.Show("Passwords do not match.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             var userService = new UserService();
             bool result = userService.Register(uname, pass, "user");

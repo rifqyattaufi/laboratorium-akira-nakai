@@ -44,6 +44,7 @@
             username.Name = "username";
             username.Size = new Size(510, 27);
             username.TabIndex = 0;
+            username.TextChanged += username_TextChanged;
             // 
             // password
             // 

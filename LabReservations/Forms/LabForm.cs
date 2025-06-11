@@ -18,7 +18,7 @@ namespace LabReservations.Forms
         public LabForm()
         {
             InitializeComponent();
-            _labService = new LabService(); // Buat instance service
+            _labService = new LabService();
         }
 
         // ... (kode lainnya akan ditambahkan di sini)
@@ -31,7 +31,7 @@ namespace LabReservations.Forms
             dgvLabs.Columns["Description"].HeaderText = "Deskripsi";
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void LabForm_Load(object sender, EventArgs e)
         {
             RefreshGrid();
         }
@@ -141,7 +141,5 @@ namespace LabReservations.Forms
                 }
             }
         }
-
-
     }
 }

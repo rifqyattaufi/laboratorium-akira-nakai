@@ -36,11 +36,13 @@
             password = new TextBox();
             username = new TextBox();
             label4 = new Label();
+            label5 = new Label();
+            confirmPassword = new TextBox();
             SuspendLayout();
             // 
             // loginButton
             // 
-            loginButton.Location = new Point(560, 436);
+            loginButton.Location = new Point(558, 469);
             loginButton.Name = "loginButton";
             loginButton.Size = new Size(94, 29);
             loginButton.TabIndex = 13;
@@ -51,7 +53,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(376, 440);
+            label3.Location = new Point(376, 473);
             label3.Name = "label3";
             label3.Size = new Size(178, 20);
             label3.TabIndex = 12;
@@ -77,7 +79,7 @@
             // 
             // registerButton
             // 
-            registerButton.Location = new Point(577, 372);
+            registerButton.Location = new Point(580, 420);
             registerButton.Name = "registerButton";
             registerButton.Size = new Size(94, 29);
             registerButton.TabIndex = 9;
@@ -109,11 +111,29 @@
             label4.TabIndex = 14;
             label4.Text = "Register Form";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(378, 353);
+            label5.Name = "label5";
+            label5.Size = new Size(127, 20);
+            label5.TabIndex = 16;
+            label5.Text = "Confirm Password";
+            // 
+            // confirmPassword
+            // 
+            confirmPassword.Location = new Point(376, 377);
+            confirmPassword.Name = "confirmPassword";
+            confirmPassword.Size = new Size(510, 27);
+            confirmPassword.TabIndex = 15;
+            // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 673);
+            Controls.Add(label5);
+            Controls.Add(confirmPassword);
             Controls.Add(label4);
             Controls.Add(loginButton);
             Controls.Add(label3);
@@ -138,5 +158,7 @@
         private TextBox password;
         private TextBox username;
         private Label label4;
+        private Label label5;
+        private TextBox confirmPassword;
     }
 }

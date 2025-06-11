@@ -25,9 +25,9 @@ namespace LabReservations.Forms
 
         private void btnAddLab_Click(object sender, EventArgs e)
         {
-            
-            var labForm = new LabForm();
-            labForm.ShowDialog();
+            this.Hide();
+            new LabForm().ShowDialog();
+            this.Show();
         }
     }
 }

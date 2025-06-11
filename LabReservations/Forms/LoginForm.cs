@@ -1,5 +1,6 @@
 ﻿using LabReservation.Domain;
 using LabReservation.Services;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,14 +39,26 @@ namespace LabReservations.Forms
             string pass = password.Text;
 
             var userService = new UserService();
-            User userData = userService.Login(uname, pass);
+            LabReservation.Domain.User userData = userService.Login(uname, pass); // Fully qualify 'User' to resolve ambiguity
 
             if (userData != null)
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 // Lanjutkan ke form utama atau proses berikutnya
                 this.DialogResult = DialogResult.OK;
-                this.Close();
+
+                Form dashboardForm;
+                if (userData.Role == "admin")
+                {
+                    dashboardForm = new DashboardAdmin();
+                }
+                else
+                {
+                    dashboardForm = new DashboardUser(userData);
+                }
+
+                this.Hide();
+                dashboardForm.ShowDialog();
             }
             else
             {

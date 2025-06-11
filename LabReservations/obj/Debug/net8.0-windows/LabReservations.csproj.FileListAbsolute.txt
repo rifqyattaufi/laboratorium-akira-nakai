@@ -32,3 +32,24 @@ D:\Konstruksi\tugas besar\laboratorium-akira-nakai\LabReservations\obj\Debug\net
 D:\Konstruksi\tugas besar\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\ref\LabReservations.dll
 D:\Konstruksi\tugas besar\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.LoginForm.resources
 D:\Konstruksi\tugas besar\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.RegisterForm.resources
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.exe
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.deps.json
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.runtimeconfig.json
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.dll
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\bin\Debug\net8.0-windows\LabReservations.pdb
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.DashboardAdmin.resources
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.DashboardUser.resources
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.LoginForm.resources
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.RegisterForm.resources
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.csproj.GenerateResource.cache
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.GeneratedMSBuildEditorConfig.editorconfig
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.AssemblyInfoInputs.cache
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.AssemblyInfo.cs
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.csproj.CoreCompileInputs.cache
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.sourcelink.json
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.dll
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\refint\LabReservations.dll
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.pdb
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.genruntimeconfig.cache
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\ref\LabReservations.dll
+C:\KONSTRUKSI\laboratorium-akira-nakai\LabReservations\obj\Debug\net8.0-windows\LabReservations.Forms.LabForm.resources

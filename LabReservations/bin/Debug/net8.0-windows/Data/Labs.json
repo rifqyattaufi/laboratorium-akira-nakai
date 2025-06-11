@@ -3,5 +3,10 @@
     "Id": 1,
     "Name": "Lab Machine Learning",
     "Description": "Ruangan Kelas 1.27"
+  },
+  {
+    "Id": 2,
+    "Name": "Lab Teknik Informatika",
+    "Description": "Ruangan Kelas 2.1"
   }
 ]

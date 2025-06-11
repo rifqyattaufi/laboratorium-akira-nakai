@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "Id": 1,
+    "Name": "Computer Lab A",
+    "Description": "Main computer laboratory with 30 Windows workstations, equipped with latest software development tools and IDEs."
+  },
+  {
+    "Id": 2,
+    "Name": "Computer Lab B",
+    "Description": "Secondary computer lab with 25 Linux workstations, specialized for web development and database management."
+  },
+  {
+    "Id": 3,
+    "Name": "Electronics Lab",
+    "Description": "Electronics and circuits laboratory with oscilloscopes, function generators, and breadboard stations."
+  },
+  {
+    "Id": 4,
+    "Name": "Network Lab",
+    "Description": "Networking laboratory with Cisco routers, switches, and network simulation equipment for hands-on training."
+  },
+  {
+    "Id": 5,
+    "Name": "Mobile Development Lab",
+    "Description": "Specialized lab for mobile app development with Android and iOS development stations and testing devices."
+  },
+  {
+    "Id": 6,
+    "Name": "AI/Machine Learning Lab",
+    "Description": "High-performance computing lab with GPU workstations for artificial intelligence and machine learning projects."
+  },
+  {
+    "Id": 7,
+    "Name": "Cybersecurity Lab",
+    "Description": "Isolated network environment for cybersecurity training, penetration testing, and digital forensics."
+  },
+  {
+    "Id": 8,
+    "Name": "Multimedia Lab",
+    "Description": "Creative lab equipped with high-end workstations for video editing, 3D modeling, and graphic design."
+  }
+]

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tHypO3X7JmU=",
+  "dgSpecHash": "NiACOl81d3E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Victus\\Documents\\KPL\\laboratorium-akira-nakai\\LabReservations\\LabReservations.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\apexmoxxy\\Documents\\Projects\\C#\\laboratorium-akira-nakai\\LabReservations\\LabReservations.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\apexmoxxy\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\apexmoxxy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\apexmoxxy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\apexmoxxy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.15\\microsoft.netcore.app.host.win-x64.8.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -5,6 +5,30 @@
     "LabId": 1,
     "StartTime": "2025-06-12T08:00:00+07:00",
     "EndTime": "2025-06-12T10:00:00+07:00",
-    "Status": "pending"
+    "Status": "approved"
+  },
+  {
+    "Id": 2,
+    "UserId": 1,
+    "LabId": 1,
+    "StartTime": "2025-06-27T08:00:00",
+    "EndTime": "2025-06-27T10:00:00",
+    "Status": "rejected"
+  },
+  {
+    "Id": 3,
+    "UserId": 1,
+    "LabId": 2,
+    "StartTime": "2025-06-26T08:00:00",
+    "EndTime": "2025-06-26T10:00:00",
+    "Status": "approved"
+  },
+  {
+    "Id": 4,
+    "UserId": 1,
+    "LabId": 2,
+    "StartTime": "2025-06-20T08:00:00",
+    "EndTime": "2025-06-20T16:00:00",
+    "Status": "rejected"
   }
 ]

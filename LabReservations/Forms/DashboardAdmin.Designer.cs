@@ -14,6 +14,9 @@
         private System.Windows.Forms.DataGridView dgvUsers;
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Panel panelUsersButton;
+        private System.Windows.Forms.DataGridView dgvReservations;
+        private System.Windows.Forms.Button btnApprove;
+        private System.Windows.Forms.Button btnReject;
 
         private void InitializeComponent()
         {
@@ -100,6 +103,30 @@
             dgvLabs.RowHeadersWidth = 51;
             dgvLabs.Size = new Size(786, 371);
             dgvLabs.TabIndex = 0;
+
+            tabLabs.Controls.Add(dgvLabs);
+            tabLabs.Controls.Add(panelLabsButton);
+
+            // Tambahkan DataGridView untuk reservations
+            dgvReservations = new DataGridView();
+            dgvReservations.Dock = DockStyle.Bottom;
+            dgvReservations.Height = 150;
+            dgvReservations.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            tabLabs.Controls.Add(dgvReservations);
+
+            // Tambahkan tombol Approve dan Reject
+            btnApprove = new Button();
+            btnApprove.Text = "Approve";
+            btnApprove.Location = new Point(120, 8);
+            btnApprove.Size = new Size(100, 25);
+
+            btnReject = new Button();
+            btnReject.Text = "Reject";
+            btnReject.Location = new Point(230, 8);
+            btnReject.Size = new Size(100, 25);
+
+            panelLabsButton.Controls.Add(btnApprove);
+            panelLabsButton.Controls.Add(btnReject);
             // 
             // panelLabsButton
             // 

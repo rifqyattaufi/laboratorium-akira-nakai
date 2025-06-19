@@ -13,27 +13,34 @@ using System.Windows.Forms;
 
 namespace LabReservations.Forms
 {
-    public partial class DashboardUser: Form
-    {        private readonly LabService _labService = new LabService();
+    public partial class DashboardUser : Form
+    {
+        private readonly LabService _labService = new LabService();
         private readonly ReservationService _reservationService = new ReservationService();
         private readonly UserService? _userService;
         private User _currentUser;
 
         public DashboardUser(User currentUser)
-        {            InitializeComponent();            _currentUser = currentUser;
-            
+        {
+            InitializeComponent();
+            _currentUser = currentUser;
+
             this.Load += DashboardUser_Load;
             btnReserve.Click += BtnReserve_Click;
             btnCancelReservation.Click += BtnCancelReservation_Click;
             dgvMyReservations.SelectionChanged += DgvMyReservations_SelectionChanged;
-        }        private void DashboardUser_Load(object? sender, EventArgs e)
+        }
+
+        private void DashboardUser_Load(object? sender, EventArgs e)
         {
             lblWelcome.Text = $"Welcome, {_currentUser.Username}!";
-              LoadLaboratories();
-            
+            LoadLaboratories();
             LoadMyReservations();
-              dtpDate.Value = DateTime.Today;dtpDate.MinDate = DateTime.Today;
-            dtpTime.Value = DateTime.Today.AddHours(8);
+
+            dtpDate.Value = DateTime.Today;
+            dtpDate.MinDate = DateTime.Today;
+            dtpStartTime.Value = DateTime.Today.AddHours(8);
+            dtpEndTime.Value = DateTime.Today.AddHours(10);
         }
 
         private void LoadLaboratories()
@@ -41,7 +48,9 @@ namespace LabReservations.Forms
             try
             {
                 var labs = _labService.LoadAll();
-                cbLab.DataSource = labs;                cbLab.DisplayMember = "Name";                cbLab.ValueMember = "Id";
+                cbLab.DataSource = labs;
+                cbLab.DisplayMember = "Name";
+                cbLab.ValueMember = "Id";
                 cbLab.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -54,8 +63,9 @@ namespace LabReservations.Forms
         {
             try
             {
-                var myReservations = _reservationService.GetByUser(_currentUser.Id);                var labs = _labService.LoadAll();
-                
+                var myReservations = _reservationService.GetByUser(_currentUser.Id);
+                var labs = _labService.LoadAll();
+
                 var displayReservations = myReservations.Select(r => new
                 {
                     Id = r.Id,
@@ -64,8 +74,10 @@ namespace LabReservations.Forms
                     StartTime = r.StartTime.ToString("HH:mm"),
                     EndTime = r.EndTime.ToString("HH:mm"),
                     Status = r.Status
-                }).OrderByDescending(r => r.Id).ToList();                dgvMyReservations.DataSource = displayReservations;
-                
+                }).OrderByDescending(r => r.Id).ToList();
+
+                dgvMyReservations.DataSource = displayReservations;
+
                 if (dgvMyReservations.Columns.Count > 0)
                 {
                     dgvMyReservations.Columns["Id"].HeaderText = "ID";
@@ -83,28 +95,38 @@ namespace LabReservations.Forms
             }
         }
 
-        private void BtnReserve_Click(object? sender, EventArgs e)        {            try
+        private void BtnReserve_Click(object? sender, EventArgs e)
+        {
+            try
             {
                 if (cbLab.SelectedValue == null)
                 {
                     MessageBox.Show("Please select a laboratory.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;                }
+                    return;
+                }
 
                 var selectedDate = dtpDate.Value.Date;
-                var selectedTime = dtpTime.Value.TimeOfDay;                var startTime = selectedDate.Add(selectedTime);
-                
-                var endTime = startTime.AddHours(2);
+                var startTime = selectedDate.Add(dtpStartTime.Value.TimeOfDay);
+                var endTime = selectedDate.Add(dtpEndTime.Value.TimeOfDay);
+
+                if (endTime <= startTime)
+                {
+                    MessageBox.Show("End time must be after start time.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 if (!TimeValidator.IsValidReservationTime(startTime, endTime))
                 {
-                    MessageBox.Show("Invalid reservation time. Reservations must be between 7 AM and 6 PM on the same day.", 
+                    MessageBox.Show("Invalid reservation time. Reservations must be between 7 AM and 6 PM on the same day.",
                         "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;                }
+                    return;
+                }
 
                 if (startTime < DateTime.Now)
                 {
                     MessageBox.Show("Cannot make reservations for past dates/times.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;                }
+                    return;
+                }
 
                 var reservation = new Reservation
                 {
@@ -114,22 +136,29 @@ namespace LabReservations.Forms
                     EndTime = endTime
                 };
 
-                _reservationService.Create(reservation);                MessageBox.Show("Reservation created successfully! Status: Pending approval.",                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _reservationService.Create(reservation);
+                MessageBox.Show("Reservation created successfully! Status: Pending approval.",
+                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 cbLab.SelectedIndex = -1;
                 dtpDate.Value = DateTime.Today;
-                dtpTime.Value = DateTime.Today.AddHours(8);
+                dtpStartTime.Value = DateTime.Today.AddHours(8);
+                dtpEndTime.Value = DateTime.Today.AddHours(10);
                 LoadMyReservations();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error creating reservation: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }        private void DgvMyReservations_SelectionChanged(object? sender, EventArgs e)
+        }
+
+        private void DgvMyReservations_SelectionChanged(object? sender, EventArgs e)
         {
             if (dgvMyReservations.SelectedRows.Count > 0)
-            {                var selectedRow = dgvMyReservations.SelectedRows[0];                var status = selectedRow.Cells["Status"].Value?.ToString();
-                
+            {
+                var selectedRow = dgvMyReservations.SelectedRows[0];
+                var status = selectedRow.Cells["Status"].Value?.ToString();
+
                 btnCancelReservation.Enabled = status == "pending";
             }
             else
@@ -158,7 +187,7 @@ namespace LabReservations.Forms
                     return;
                 }
 
-                var confirmResult = MessageBox.Show("Are you sure you want to cancel this reservation?", 
+                var confirmResult = MessageBox.Show("Are you sure you want to cancel this reservation?",
                     "Confirm Cancellation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (confirmResult == DialogResult.Yes)

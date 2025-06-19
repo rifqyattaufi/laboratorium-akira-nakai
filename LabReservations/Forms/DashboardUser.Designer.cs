@@ -10,12 +10,14 @@
         private System.Windows.Forms.Button btnCancelReservation;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.ComboBox cbLab;
-        private System.Windows.Forms.DateTimePicker dtpDate;
-        private System.Windows.Forms.DateTimePicker dtpTime;
-        private System.Windows.Forms.Button btnReserve;
         private System.Windows.Forms.Label lblLab;
+        private System.Windows.Forms.Button btnReserve;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.Label lblStartTime;
+        private System.Windows.Forms.Label lblEndTime;
+        private System.Windows.Forms.DateTimePicker dtpStartTime;
+        private System.Windows.Forms.DateTimePicker dtpEndTime;
 
         private void InitializeComponent()
         {
@@ -30,8 +32,10 @@
             cbLab = new ComboBox();
             lblDate = new Label();
             dtpDate = new DateTimePicker();
-            lblTime = new Label();
-            dtpTime = new DateTimePicker();
+            lblStartTime = new Label();
+            dtpStartTime = new DateTimePicker();
+            lblEndTime = new Label();
+            dtpEndTime = new DateTimePicker();
             btnReserve = new Button();
             tabControl.SuspendLayout();
             tabMyReservations.SuspendLayout();
@@ -106,8 +110,10 @@
             tabNewReservation.Controls.Add(cbLab);
             tabNewReservation.Controls.Add(lblDate);
             tabNewReservation.Controls.Add(dtpDate);
-            tabNewReservation.Controls.Add(lblTime);
-            tabNewReservation.Controls.Add(dtpTime);
+            tabNewReservation.Controls.Add(lblStartTime);
+            tabNewReservation.Controls.Add(dtpStartTime);
+            tabNewReservation.Controls.Add(lblEndTime);
+            tabNewReservation.Controls.Add(dtpEndTime);
             tabNewReservation.Controls.Add(btnReserve);
             tabNewReservation.Location = new Point(4, 29);
             tabNewReservation.Name = "tabNewReservation";
@@ -149,29 +155,46 @@
             dtpDate.Size = new Size(250, 27);
             dtpDate.TabIndex = 3;
             // 
-            // lblTime
+            // lblStartTime
             // 
-            lblTime.Location = new Point(40, 140);
-            lblTime.Name = "lblTime";
-            lblTime.Size = new Size(120, 23);
-            lblTime.TabIndex = 4;
-            lblTime.Text = "Time:";
+            lblStartTime.Location = new Point(40, 140);
+            lblStartTime.Name = "lblStartTime";
+            lblStartTime.Size = new Size(120, 23);
+            lblStartTime.TabIndex = 4;
+            lblStartTime.Text = "Start Time:";
             // 
-            // dtpTime
+            // dtpStartTime
             // 
-            dtpTime.Format = DateTimePickerFormat.Time;
-            dtpTime.Location = new Point(180, 140);
-            dtpTime.Name = "dtpTime";
-            dtpTime.ShowUpDown = true;
-            dtpTime.Size = new Size(250, 27);
-            dtpTime.TabIndex = 5;
+            dtpStartTime.Format = DateTimePickerFormat.Time;
+            dtpStartTime.Location = new Point(180, 140);
+            dtpStartTime.Name = "dtpStartTime";
+            dtpStartTime.ShowUpDown = true;
+            dtpStartTime.Size = new Size(250, 27);
+            dtpStartTime.TabIndex = 5;
+            // 
+            // lblEndTime
+            // 
+            lblEndTime.Location = new Point(40, 190);
+            lblEndTime.Name = "lblEndTime";
+            lblEndTime.Size = new Size(120, 23);
+            lblEndTime.TabIndex = 6;
+            lblEndTime.Text = "End Time:";
+            // 
+            // dtpEndTime
+            // 
+            dtpEndTime.Format = DateTimePickerFormat.Time;
+            dtpEndTime.Location = new Point(180, 190);
+            dtpEndTime.Name = "dtpEndTime";
+            dtpEndTime.ShowUpDown = true;
+            dtpEndTime.Size = new Size(250, 27);
+            dtpEndTime.TabIndex = 7;
             // 
             // btnReserve
             // 
-            btnReserve.Location = new Point(180, 200);
+            btnReserve.Location = new Point(180, 240);
             btnReserve.Name = "btnReserve";
             btnReserve.Size = new Size(120, 30);
-            btnReserve.TabIndex = 6;
+            btnReserve.TabIndex = 8;
             btnReserve.Text = "Reserve";
             btnReserve.UseVisualStyleBackColor = true;
             // 
